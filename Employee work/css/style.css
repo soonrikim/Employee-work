@@ -1,0 +1,218 @@
+body {
+  height: 500vw;
+  font-family: "Apple SD Gothic Neo", "Roboto", "Noto Sans KR", NanumGothic,
+    "Malgun Gothic", sans-serif;
+  -webkit-overflow-scrolling: touch;
+  color: #555;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(83 108 255);
+  transition: background 0.5s;
+}
+body[data-char="ragirl"] {
+  background: #ff7200;
+}
+
+/* world */
+.world {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  perspective: 1000px;
+}
+.stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+.house {
+  width: 100vw;
+  height: 100vh;
+  transform: translateZ(-490vw);
+  transform-style: preserve-3d;
+}
+.wall {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 120vh;
+  background: rgba(255, 255, 255, 0.8);
+}
+.wall-left {
+  display: flex;
+  overflow: hidden;
+  width: 1000vw;
+  background: #f8f8f8;
+  transform: rotateY(90deg) translateZ(-500vw);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 3;
+}
+.R1 {
+  width: 35%;
+}
+.R2 {
+  width: 35%;
+}
+
+.R3 {
+  width: 40%;
+}
+
+.Horizon-img-L {
+  position: relative;
+  overflow: hidden;
+  width: 200vw;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 160px;
+  padding-left: 500px;
+}
+.SDK-img-L {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250vw;
+  height: 120vh;
+  background: rgb(255, 255, 255);
+}
+.Nazare-img-L {
+  position: relative;
+  overflow: hidden;
+  width: 250vw;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+.WBNI-img-L {
+  position: relative;
+  overflow: hidden;
+  width: 300vw;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+.wall-right {
+  display: flex;
+  overflow: hidden;
+  width: 1000vw;
+  background: #f8f8f8;
+  transform: rotateY(90deg) translateZ(-400vw);
+}
+
+.Horizon-img-R {
+  position: relative;
+  overflow: hidden;
+  width: 200vw;
+  height: 120vh;
+  display: flex;
+  /* background-image: url(../images/apple3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.SDK-img-R {
+  position: relative;
+  overflow: hidden;
+  width: 250vw;
+  height: 120vh;
+  padding-right: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: scaleX(-1);
+  background: rgb(255, 255, 255);
+}
+.Nazare-img-R {
+  position: relative;
+  overflow: hidden;
+  width: 250vw;
+  height: 120vh;
+  padding-right: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: scaleX(-1);
+  background: rgb(255, 255, 255);
+}
+.WBNI-img-R {
+  position: relative;
+  overflow: hidden;
+  width: 300vw;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scaleX(-1);
+  background: rgb(255, 255, 255);
+}
+
+img {
+  width: 1089px;
+  height: 120vh;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+}
+
+iframe {
+}
+
+.wall-front-a {
+  transform: translateZ(300vw);
+}
+.wall-front-b {
+  transform: translateZ(50vw);
+}
+.wall-front-c {
+  transform: translateZ(-200vw);
+}
+.wall-front-d {
+  transform: translateZ(-500vw);
+}
+.wall-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.wall-title {
+  font-size: 5rem;
+}
+.progress-bar-con {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 5px;
+  background: #555;
+}
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background: #fdea03;
+}

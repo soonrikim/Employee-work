@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 1005;
+  height: 80px;
+}
+
+.main {
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  background-color: white;
+  margin-top: 1.5%;
+}
+
+.main img {
+  display: block;
+  margin: 0px auto;
+  padding-right: 45px;
+  width: 900px;
+}
+
+h1,
+h3 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.title {
+  padding-right: 565px;
+  padding-top: 25px;
+}
+
+.title h4 {
+  font-size: 1.6rem;
+  color: rgb(0, 0, 0);
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 1rem;
+  padding-top: 25px;
+  font-size: 1rem;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav ul li {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* splash screen*/
+
+.intro {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /* background: rgb(83 108 255); */
+  background-color: rgb(83 108 255);
+  transition: 1s;
+}
+
+.logo-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+
+.logo.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+/*logo*/
+
+.player {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.player-text1 {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.player-text1 h1 {
+  color: white;
+}
+
+.player-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.player-text2 {
+  position: absolute;
+  text-align: center;
+  line-height: 4;
+  z-index: 1;
+}
+
+.player-video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+.player-video video {
+  padding: 1%;
+}
+
+.player-video video:hover {
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: 0.5s;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+.player-img {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  position: relative;
+  padding-left: 700px;
+}
+
+.player img {
+  display: flex;
+  height: 500px;
+  padding-left: 230px;
+}
+
+/* player */
+
+.introduce {
+  width: 100%;
+  height: 400px;
+  padding-bottom: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduce h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 6;
+  color: black;
+}
+
+.bigtech {
+  width: 100%;
+  background-color: #e7e9eb;
+}
+
+.bigtech-container {
+  width: 100%;
+  height: 600px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bigtech-text {
+  width: 540px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 320px;
+  padding-left: 20px;
+}
+
+.bigtech-text h2 {
+  color: #8f8f8f;
+}
+
+.bigtech-text2 {
+  position: relative;
+  padding-top: 30px;
+  color: #8f8f8f;
+}
+
+.bigtech-text2 h3 {
+  color: #8f8f8f;
+}
+
+.bigtech-img {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  padding-left: 30px;
+}
+
+.bigtech-img img {
+  width: 70%;
+}
+
+/* bigtech */
+
+.bigtech2 {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bigtech2-up {
+  margin-top: 50px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.bigtech2-up h2,
+p {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.bigtech2-down {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-left: 100px;
+}
+
+.bigtech2-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.bigtech2-right {
+  display: flex;
+  height: 1000px;
+  align-items: flex-end;
+}
+
+.bigtech2-left img {
+  width: 600px;
+  height: 280px;
+  padding-right: 120px;
+}
+
+.bigtech2-right img {
+  height: 460px;
+  padding-left: 125px;
+}
+
+/* bigtech */
+
+.microsoft {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.ms-img {
+  position: absolute;
+}
+
+.ms-text {
+  position: relative;
+  top: 500px;
+  padding-left: 50px;
+}
+
+.ms-text h1,
+h2 {
+  color: white;
+}
+
+.microsoft2 {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+}
+
+.microsoft2-left {
+  width: 35%;
+  height: 800px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.microsoft2-right {
+  width: 35%;
+  height: 800px;
+  padding-top: 50px;
+}
+
+.microsoft-middle {
+  width: 30%;
+  height: 800px;
+}
+
+.microsoft2-left-up {
+  height: 400px;
+  background-image: url(../images/mesh.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.microsoft2-left-down {
+}
+
+.microsoft-middle {
+  text-align: center;
+  padding-left: 45px;
+  padding-top: 50px;
+}
+
+.microsoft-middle h2 {
+  color: black;
+}
+
+.microsoft2-right {
+}
+
+.microsoft2-right img {
+  width: 450px;
+  height: 250px;
+  padding-bottom: 20px;
+}
+
+.nvidia {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.nvidia-img {
+  padding-top: 200px;
+  width: 750px;
+  position: absolute;
+}
+
+.nvidia-img img {
+  width: 750px;
+  height: 280px;
+  padding-right: 50px;
+}
+
+.nvidia-text {
+  position: relative;
+
+  top: 500px;
+}
+
+.nvidia-text h1 {
+  color: white;
+}
+
+.nvidia2 {
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.nvidia2-left {
+  width: 20%;
+  height: 1000px;
+  padding-top: 300px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nvidia2-right {
+  width: 20%;
+  height: 1000px;
+  padding-top: 300px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nvidia2-middle {
+  width: 60%;
+  height: 1000px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+
+.nvidia2-middle img {
+  width: 700px;
+  height: 350px;
+}
+
+.nvidia2-middle h2 {
+  color: black;
+}
+
+.nvidia2-left img,
+.nvidia2-right img {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+
+.footer-title {
+  padding-right: 565px;
+  padding-top: 25px;
+}
+
+.footer-title h4 {
+  font-size: 1.6rem;
+  color: rgb(255, 255, 255);
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 1rem;
+  padding-top: 25px;
+  font-size: 1rem;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav ul li {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  color: white;
+}
+
+.footer-nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
